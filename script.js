@@ -1,5 +1,5 @@
 
-setInterval(setClock, 3000)
+setInterval(setClock, 1000)
 
 let hourHand = document.querySelector('[data-hour-hand]')
 let minuteHand = document.querySelector('[data-minute-hand]')
@@ -17,6 +17,6 @@ let setClock = function(){
 }
 
 let setRotation = function(element, rotationMethod){
-    element.style.setProperty('transform', rotate(rotationMethod + 'deg') * 360)
+    element.style.setProperty('--rotation', rotationMethod * 360)
 } 
 
